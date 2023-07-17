@@ -1,4 +1,4 @@
 const Filter = function () {
-  return console.log("hey");
+  return console.log("Hey you");
 };
 export default Filter;
