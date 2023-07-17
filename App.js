@@ -8,6 +8,7 @@ import {
   View,
   ScrollView,
 } from "react-native";
+import Filter from "./components/Filter";
 
 export default function App() {
   const [inputValue, setInputValue] = useState("");
@@ -45,6 +46,7 @@ export default function App() {
               </View>
             );
           })}
+          <Filter />
         </ScrollView>
       </View>
       <StatusBar style="auto" />
@@ -65,7 +67,7 @@ const styles = StyleSheet.create({
     marginBottom: 30,
   },
   todoHeader: {
-    // backgroundColor: "gray",
+    backgroundColor: "gray",
     flex: 2,
     width: "90%",
     justifyContent: "center",
@@ -87,7 +89,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   todoBody: {
-    // backgroundColor: "lightgreen",
+    backgroundColor: "lightgreen",
     flex: 7,
     width: "90%",
     marginVertical: 20,
